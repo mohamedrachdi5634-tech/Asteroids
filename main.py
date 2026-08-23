@@ -38,6 +38,7 @@ def main():
         for draws in drawable :
             draws.draw(screen)
         updatable.update(dt)
+        
         for asteroid in asteroids :
             if asteroid.collides_with(player) :
                 log_event("player_hit")
